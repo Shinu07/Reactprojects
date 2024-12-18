@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  height:100vh;
+  width:100vw;
+  background-color: #303030;
+  justify-content: center;
+  align-items: center;
+}
+.accordian{
+  width: 500px;
+}
+.Item{
+  background-color: #202020;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  border-radius: 1rem;
+}
+.title {
+  color: antiquewhite;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.answer{
+  color: #f0f0f0;
+  height: auto;
+}
