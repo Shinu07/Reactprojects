@@ -1,0 +1,55 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: rgb(16, 16, 16);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+}
+
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color:rgb(192, 192, 192);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 60%, rgba(252,176,69,1) 100%);
+}
+button:focus,
+button:focus-visible {
+  outline: 10px auto -webkit-focus-ring-color;
+  
+}
+
+
+
+
