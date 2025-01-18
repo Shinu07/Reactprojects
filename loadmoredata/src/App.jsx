@@ -12,7 +12,7 @@ function App() {
       try {
         setLoading(true);
         const response = await fetch(
-          `https://dummyjson.com/products?limit=20&skip=${count * 20}`
+          `https://dummyjson.com/products?limit=10&skip=${count * 10}`
         );
         const result = await response.json();
 
@@ -35,8 +35,10 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className="container">
         {loading && <p>Loading...</p>}
+        <h2>All listed Products</h2>
+        
         {products && products.length ? (
           products.map((item) => (
             <div className="products" key={item.id}>
@@ -48,7 +50,7 @@ function App() {
       </div>
       <div className="button-container">
         <button onClick={loadMore} disabled={loading}>
-          {loading ? "Loading..." : "Load more products"}
+          {loading ? "Loading..." : <p>Load more</p>}
         </button>
       </div>
     </>
